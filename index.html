@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Live Coding Zurich</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-black">
+        <div class="container px-5">
+          <a class="navbar-brand" href="index.html"><img src="./assets/favicon_white.ico"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#events">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#signup">Sign Up</a>
+              </li>
+
+              <!--
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                    <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                                    <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                                </ul>
+                            </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Header-->
+      <section class="py-0" id="home">
+          <div class="container px-5">
+            
+            <div class="row gx-5 align-items-center justify-content-lg-start">
+              <div class="col-lg-7 col-xl-6 col-xxl-5">
+              
+                <div class="my-5 text-left text-xl-start">
+                
+                  <h1 class="display-5 fw-bolder text-white mb-2">
+                    Live Code Space
+                  </h1>
+                  <p class="lead fw-normal text-white-50 mb-4 text-justify">
+                    Live Coding is a hybrid form of performing arts, composed of
+                    diverse practices, including on-the-fly programming, digital
+                    media and music. <br /><br />
+                    Live Coding Space is inclusive, regardless of previous
+                    experience in any form of coding. The event takes place
+                    quarterly in Zurich, CH.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-7 col-xl-6 col-xxl-5">
+                <div id = "p5lcs">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+      </section>
+      <!-- Features section-->
+      <section class="py-5" id="events">
+        <div class="container px-5 mb-5">
+          <div class="row gx-5">
+            <div class="col-lg-6 col-xl-5 col-xxl-4 mb-5">
+              <h2 class="fw-bolder mb-0 text-white">Session #1</h2>
+
+              <br />
+              <p class="fw-bolder mb-0 text-white-50 small">18 November 2022</p>
+              <br />
+              <p class="fw-bolder mb-0 text-white-50 small">
+                MediaCampus Building <br />
+                04 Entrance (47.3856, 8.5032) <br />
+                Baslerstrasse 40, 8048 Zurich
+              </p>
+
+              <div
+                class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start"
+              >
+                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="https://google.com" target = "_blank"
+                  >Register Session&nbsp;#1</a
+                >
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-5 col-xxl-4 text-white  ">
+              <div class="row gx-5 row-cols-1 h-100">
+                <!--  <div class="col mb-5 h-100">
+                                  <h2 class="h5">Timetable</h2>
+										<p class="text-white-50 small">19:00 Doors Open <br> 
+										20:00 - 20:30  bitte.langsam  <br> 
+										20:45 - 21:15  Jakob Eisenbach <br>
+										21:30 - 22:00  Suntka Rinke  <br>
+										22:15 - 23:00  The Younger Siblings of Satan <br>
+										00:00 Doors Closed</p>
+									
+                                </div> -->
+
+                <div class="list-group" id="timetable" role="tablist">
+                  <h6>19:00 Doors Open </h6>
+                  <a
+                    class="list-group-item list-group-item-action btn btn-info"
+                    data-toggle="list"
+                    href="#bitte"
+                    role="tab"
+            
+                    >20:00 - 20:30 bitte.langsam
+                  </a>
+                  <a
+                    class="list-group-item list-group-item-action btn btn-info"
+                    data-toggle="list"
+                    href="#jakob"
+                    role="tab"
+                    >20:45 - 21:15 Jakob Eisenbach</a
+                  >
+                  <a
+                    class="list-group-item list-group-item-action btn btn-info "
+                    data-toggle="list"
+                    href="#suntka"
+                    role="tab"
+                    >21:30 - 22:00 Suntka Rinke
+                  </a>
+                  <a
+                    class="list-group-item list-group-item-action btn btn-info "
+                    data-toggle="list"
+                    href="#tysos"
+                    role="tab"
+                    >22:15 - 23:00 The Younger Siblings of Satan</a
+                  >
+                  <h6 >00:00 Doors Close </h6>
+                </div>
+
+                <div class="col-9">
+                  <div class="tab-content text-justify">
+                    <div class="tab-pane fade" id="bitte" role="tabpanel">
+                      <p>
+                        Die musikalischen Klanglandschaften des Sound Art Duos
+                        bittelangsam entstehen an der Schnittstelle von
+                        bildender Kunst und experimenteller Musik. Nach dem
+                        Motto site specific sound weaving pflegen Andrea und
+                        Heiko eine ortsbezogene Arbeitsweise.
+                      </p>
+                      <p>
+                        Field Recordings, Tape Loops, Modular Synthesizer und
+                        Gitarrenklänge suchen ihr Gegenüber in leeren
+                        Hotelzimmern, alten Schulhäusern oder verlassenen
+                        Industriehallen. In verschiedenen Formaten, als
+                        Performance, Installation oder Listening Session
+                        verhandelt bittelangsam Klang und Raum, Ästhetik und
+                        Kultur.
+                      </p>
+                      <a href="https://bittelangsam.ch/"
+                        >https://bittelangsam.ch/</a
+                      >
+                    </div>
+
+                    <div class="tab-pane fade" id="jakob" role="tabpanel">
+                      <a href="https://www.jakobeisenbach.com/"
+                        >https://www.jakobeisenbach.com/</a
+                      >
+                    </div>
+                    <div class="tab-pane fade" id="suntka" role="tabpanel">
+                      <a href="https://www.mathemarticienne.xyz"
+                        >https://www.mathemarticienne.xyz</a
+                      >
+                    </div>
+                    <div class="tab-pane fade" id="tysos" role="tabpanel">
+                      <a href="https://yyyyyyyy.xyz/)">https://yyyyyyyy.xyz</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Testimonial section-->
+      <section class="py-5" id="team">
+        <div class="py-5 bg-black">
+          <div class="container px-5 mb-5">
+            <div class="row gx-5 justify-content-center">
+              <div class="col-lg-10 col-xl-7">
+                <div class="text-center">
+                  <div class="mb-4 text-white-50 text-justify">
+                    <h5>
+                    We are a team of people from diverse backgrounds, but we 
+                    all share the same passion for generative
+                    media. <br /><br />
+                    If you are interested in joining us or just have a 
+                    question, send mail to: <br /><br />
+                  
+                    <a href="#" id="mailbutton">openlivecode@protonmail.ch</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- News preview section-->
+      <section class="py-5" id="signup">
+        <div class="container px-5 my-5">
+          <!-- Call to action-->
+          <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+            <div
+              class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start"
+            >
+              <div class="mb-4 mb-xl-0">
+                <div class="fs-3 fw-bold text-white">Stay up to date</div>
+                <div class="text-white-50">
+                  >No spam, events only.</p>
+                </div>
+              </div>
+              <div class="ms-xl-4">
+                <div class="input-group mb-2">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Email address..."
+                    aria-label="Email address..."
+                    aria-describedby="button-newsletter"
+                  />
+                  <button
+                    class="btn btn-outline-light"
+                    id="button-newsletter"
+                    type="button"
+                  >
+                    Sign up
+                  </button>
+                </div>
+                <div class="small text-white-50">
+                  <p>We care about privacy, and will never share your data.</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script type="module" src="js/scripts.js"></script>
+    <script type="module" src="js/lcs.js"></script>
+  </body>
+</html>
