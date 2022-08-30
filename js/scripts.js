@@ -12,13 +12,6 @@ $('#timetable > a').on('click', function (e) {
   $(this).tab('show')
 
 })
-
-$(document).ready(function() {
-  $('#open_studio').click(function(event) {
-    window.location = "mailto:open.live.code@proton.me";
-  });
-});
-
 let interactive = new p5(s, 'p5lcs');
 
 mail_entry = document.getElementById("user_mail").value
