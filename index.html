@@ -232,7 +232,7 @@
                     If you are interested in joining us or just have a 
                     question, send mail to: <br /><br />
                   
-                    <h2>open.live.code@proton.me</h2>
+                    <h2>open.live.code@proton.me</>
                     </h5>
                   </div>
                 </div>
@@ -289,5 +289,27 @@
     <!-- Core theme JS-->
     <script type="module" src="js/scripts.js"></script>
     <script type="module" src="js/lcs.js"></script>
+    <script>
+
+
+mail_entry = document.getElementById("user_mail");
+button_news = document.getElementById("button-newsletter");
+
+function sendEmail() {
+  Email.send({
+    Host: "",
+    Username: "sender@email_address.com",
+    Password: "Enter your password",
+    To: 'open.live.code@proton.me',
+    From: mail_entry,
+    Subject: "I want to receive newsletter",
+    Body: "Keeo me up to date!!",
+  })
+    .then(function () {
+      mail_entry = "Thank you!"
+      button_news.disabled = true;
+    });
+}
+    </script>
   </body>
 </html>
