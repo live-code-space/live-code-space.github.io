@@ -14,8 +14,8 @@ $('#timetable > a').on('click', function (e) {
 })
 
 $(document).ready(function() {
-  $('#openstudio').click(function(event) {
-    window.location = "mailto:openlivecode@protonmail.ch";
+  $('#open_studio').click(function(event) {
+    window.location = "mailto:open.live.code@proton.me";
   });
 });
 
