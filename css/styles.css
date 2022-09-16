@@ -654,8 +654,8 @@ progress {
 }
 
 #p5lcs  {
-  width: 800px;
-  height: 600px;
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 576px) {
