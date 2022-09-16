@@ -653,10 +653,7 @@ progress {
   margin-left: auto;
 }
 
-#p5lcs  {
-  width: 100%;
-  height: auto;
-}
+
 
 @media (min-width: 576px) {
   .container-sm, .container {
