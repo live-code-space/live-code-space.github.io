@@ -17,6 +17,11 @@
   src:  url('../assets/Prompt-Light.ttf') format('truetype');  
 }
 
+ #p5lcs  {
+    width: 50%;
+    height:500px;
+  }
+
 
 :root {
   --bs-blue: #0d6efd;
@@ -709,8 +714,8 @@ progress {
 
 @media (max-width: 576px) {
   #p5lcs  {
-    width: 200px;
-    height: 100px;
+  width: 400px;
+    height: 300px;
   }
 
 }

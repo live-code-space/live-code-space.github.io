@@ -1,4 +1,4 @@
-let s = function(lcs) {
+  let s = function(lcs) {
   var constMouseX;
   var constMouseY;
   
