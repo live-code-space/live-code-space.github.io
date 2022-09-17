@@ -8,8 +8,8 @@
 
 
 @font-face {
-  font-family: 'Montserrat';
-  src:  url('../assets/Montserrat-VariableFont_wght.ttf') format('truetype');  
+  font-family: 'PromptR';
+  src:  url('../assets/Prompt-Regular.ttf') format('truetype');  
 }
 
 @font-face {
@@ -18,8 +18,8 @@
 }
 
  #p5lcs  {
-    width: 50%;
-    height:500px;
+    width: 600px;
+    height: 400px;
   }
 
 
@@ -68,7 +68,7 @@
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, Roboto;
   --bs-font-neueMetana: "NeueMetanaNext", -apple-system;
-  --bs-font-montserrat: "Prompt", -apple-system;
+  --bs-font-promptR: "Prompt", -apple-system;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -652,13 +652,16 @@ progress {
 .container-md,
 .container-sm {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.25rem);
-  padding-left: var(--bs-gutter-x, 0.25rem);
+  padding-right: var(--bs-gutter-x, 0.2rem);
+  padding-left: var(--bs-gutter-x, 0.2rem);
   margin-right: auto;
   margin-left: auto;
 }
 
-
+.container-md{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
 
 @media (min-width: 576px) {
   .container-sm, .container {
@@ -705,11 +708,11 @@ progress {
     width: 400px;
     height: 300px;
   }
-
+/* 
 
   .gx-5 {
   --bs-gutter-x: -2rem !important;
-  }
+  } */
 }
 
 @media (max-width: 576px) {
@@ -4088,7 +4091,7 @@ textarea.form-control-lg {
 
 .tab-content > .tab-pane {
   display: none;
-  font-family: Montserrat;
+  font-family: PromptR;
   padding: 2rem 0 0 0;
 }
 
@@ -7678,7 +7681,7 @@ textarea.form-control-lg {
 }
 
 .fs-4 {
-  font-size: calc(0.775rem + 0.3vw) !important;
+  font-size: calc(0.575rem + 0.3vw) !important;
 }
 
 .fs-5 {
@@ -11381,4 +11384,8 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 15rem;
+}
+
+.fa {
+  text-decoration: none !important;
 }

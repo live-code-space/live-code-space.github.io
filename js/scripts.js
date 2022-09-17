@@ -1,10 +1,3 @@
-/*!
-* Start Bootstrap - Modern Business v5.0.6 (https://startbootstrap.com/template-overviews/modern-business)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-modern-business/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
 import { s } from './lcs.js';
 
 $('#timetable > a').on('click', function (e) {
@@ -12,4 +5,15 @@ $('#timetable > a').on('click', function (e) {
   $(this).tab('show')
 
 })
+
 let interactive = new p5(s, 'p5lcs');
+
+$(window).on('resize', function() {
+  if($(window).width() < 768) {
+      $('#times').addClass('py-5');
+      
+  }else{
+      $('#times').removeClass('py-5');
+  }
+})
+
